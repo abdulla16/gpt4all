@@ -1,13 +1,13 @@
 # model/tokenizer
-model_name: # update
-tokenizer_name: # update
+model_name: "EleutherAI/gpt-j-6b"
+tokenizer_name: "EleutherAI/gpt-j-6b"
 gradient_checkpointing: false
 save_name: # CHANGE
 
 # dataset
 streaming: false
 num_proc: 64
-dataset_path: # CHANGE
+dataset_path: /kaggle/input/data-200/data_200.jsonl
 max_length: 1024
 batch_size: 4
 
@@ -18,14 +18,14 @@ weight_decay: 0.0
 eval_every: 2000
 eval_steps: 100
 save_every: 2000
-output_dir: # CHANGE
+output_dir: output
 checkpoint: null
 lora: true
 warmup_steps: 100
 num_epochs: 2
 
 # logging
-wandb: true
+wandb: false
 wandb_entity: # update
 wandb_project_name: # update
 seed: 42
