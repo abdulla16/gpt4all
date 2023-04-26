@@ -53,7 +53,7 @@ def tokenize_inputs(config, tokenizer, examples):
         out["labels"].append(labels)
         out["input_ids"].append(input_tokens)
 
-    out = {k: torch.stack(v) if isinstance(v, list) else v for k, v in out.items()}
+    # out = {k: torch.stack(v) if isinstance(v, list) else v for k, v in out.items()}
 
     return out
 
