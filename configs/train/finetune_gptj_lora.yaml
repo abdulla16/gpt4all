@@ -7,7 +7,7 @@ save_name: # CHANGE
 # dataset
 streaming: false
 num_proc: 64
-dataset_path: /kaggle/input/data_1024/data.jsonl
+dataset_path: /kaggle/input/data-1024/data.jsonl
 max_length: 1024
 batch_size: 1 
 
