@@ -82,6 +82,8 @@ def train(accelerator, config):
         gradient_accumulation_steps = accelerator.state.deepspeed_plugin.deepspeed_config[
             "gradient_accumulation_steps"
         ]
+    else:
+        gradient_accumulation_steps = 2
 
     # decay to min_lr instead of 0
     lr_ratio = config["min_lr"] / config["lr"]
